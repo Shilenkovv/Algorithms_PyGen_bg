@@ -1,4 +1,4 @@
-def sort_matrix(matrix: list[list[int]]) -> list[list[int]]:
+def sort_matrix(matrix: list[list[int]]) -> None:
     n = len(matrix)
 
     for i in range(n * n - 1):
