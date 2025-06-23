@@ -1,4 +1,4 @@
-def create_matrix(n, m):
+def create_matrix(n: int, m: int) -> list[list[int]]:
     matrix = [[0] * m for _ in range(n)]
 
     number = 1
