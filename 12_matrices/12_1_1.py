@@ -1,13 +1,12 @@
-def diagonal_sum(matrix: list[list[int]]) -> int:
-    ans = 0
+def create_matrix(n: int, m: int) -> list[list[int]]:
+    matrix = [[1] * m for _ in range(n)]
 
     for i in range(len(matrix)):
         for j in range(len(matrix)):
-            if i == j or i + j == len(matrix) - 1:
-                ans += matrix[i][j]
-    return ans
+            if i % 2 and j % 2:
+                matrix[i][j] = 0
+    return matrix
 
 
-# matrix = [[8, 8, 2, 10], [9, 1, 6, 7], [4, 6, 1, 7], [3, 10, 0, 9]]
-
-# print(diagonal_sum(matrix))
+matrix = create_matrix(5, 6)
+print(*matrix, sep='\n')
