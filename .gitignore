@@ -3,6 +3,8 @@ __pycache__
 .pytest_cache
 venv/
 images/
+.vscode/
+.ruff_cache/
 
 main.py
 ruff.toml
